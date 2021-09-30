@@ -25,7 +25,7 @@ export const App = () => {
     window.localStorage.setItem('contacts', JSON.stringify(contacts));
   }, [contacts]);
 
-     const formSubmitHandler = ( name, number ) => {
+  const formSubmitHandler = ( name, number ) => {
     const newContact = {
       id: uuidv4(),
       name,
@@ -50,7 +50,7 @@ export const App = () => {
     )};
 
   
-   const getVisibleContacts = () => {
+  const getVisibleContacts = () => {
     const normalizedFilter = filter.toLowerCase();
 
     return contacts.filter(contact =>

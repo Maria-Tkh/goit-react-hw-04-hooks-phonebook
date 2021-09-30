@@ -9,6 +9,7 @@ export const ContactList = ({ contacts, onDeleteContact }) => {
         <ContactElement
           name={contact.name}
           number={contact.number}
+          key={contact.id}
           onClick={() => onDeleteContact(contact.id)}
         />
       ))}
