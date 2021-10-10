@@ -14,8 +14,8 @@ export const App = () => {
   ];
   
   const [filter, setFilter] = useState('');
-
   const [contacts, setContacts] = useState(() => {
+
     return (
       JSON.parse(window.localStorage.getItem("contacts")) ?? defaultValue
     );
